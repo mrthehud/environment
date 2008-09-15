@@ -129,6 +129,11 @@
 ;; Set LoadPath
 ;;;;;;;;;;;;
 (add-to-list 'load-path "~/.emacs.d/")
+(setq load-path (cons "~/.emacs.d/orgmode/lisp" load-path))
+
+;; Org Mode
+;;;;;;;;;;;;
+(require 'org-install)
 
 ;; Line Numbers
 ;;;;;;;;;;;;;;;;;
