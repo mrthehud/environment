@@ -5,8 +5,10 @@
 * Issues
 
 ** TODO Front Page
-*** TODO Add Deadline
+   SCHEDULED: <2008-10-16 Thu>
+
 *** TODO Release 
+
 *** TODO Issue Links:
 
 *** TODO Feeds
@@ -15,4 +17,4 @@
 
 *** TODO look into speed increases / improvements
 
-** 
+ 

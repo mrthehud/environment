@@ -2,8 +2,8 @@
 ** DONE Begin using orgmode
    CLOSED: [2008-09-16 Tue 21:06]
 ** TODO Learn org mode
-** TODO Update environment on google code
-   SCHEDULED: <2008-09-16 Tue>
+** DONE Update environment on google code
+   SCHEDULED: <2008-09-16 Tue> CLOSED: [2008-09-16 Tue 22:22]
 
 * Links
 ** Google Code
