@@ -11,6 +11,8 @@
 ;; under X, instead of the default, backspace behavior.
 (global-set-key [delete] 'delete-char)
 (global-set-key [kp-delete] 'delete-char)
+(global-set-key [backspace] 'backward-kill-word)
+(global-set-key [(control backspace)] 'backward-delete-char)
 
 ;; Turn on font-lock mode for Emacs
 (cond ((not running-xemacs)
@@ -129,11 +131,6 @@
 ;; Set LoadPath
 ;;;;;;;;;;;;
 (add-to-list 'load-path "~/.emacs.d/")
-(setq load-path (cons "~/.emacs.d/orgmode/lisp" load-path))
-
-;; Org Mode
-;;;;;;;;;;;;
-(require 'org-install)
 
 ;; Line Numbers
 ;;;;;;;;;;;;;;;;;
@@ -185,3 +182,15 @@
 ;; libempd
 ;;;;;;;;
 (require 'mpcel)
+
+;; Org Mode
+;;;;;;;;;;;;
+(add-to-list 'load-path "~/.emacs.d/orgmode/lisp")
+(require 'org-install)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-agenda-files (list "~/environment/org/work.org"
+                             "~/environment/org/home.org"))
+(setq org-log-done t)
+

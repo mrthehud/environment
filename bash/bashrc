@@ -1,9 +1,12 @@
+#!/bin/bash
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
+
+LOADED_FILES=""
 
 # don't put duplicate lines in the history. See bash(1) for more options
 export HISTCONTROL=ignoredups
@@ -63,9 +66,10 @@ esac
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+FIQ=~/environment/bash/aliases
+if [ -f $FIQ ]; then
+    . $FIQ
+    $LOADED_FILES="$LOADED_FILES:$FIQ"
 fi
 
 
@@ -82,3 +86,7 @@ export MPD_HOST=kee
 #TODO - Only on startup
 #Remove Caps Lock
 #xmodmap ~/.Xmodmap
+
+FIQ="~/environment/bash/bashrc"
+LOADED_FILES="$LOADED_FILES:$FIQ"
+export LOADED_FILES
