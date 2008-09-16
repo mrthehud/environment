@@ -1,0 +1,15 @@
+* Tasks
+** DONE Begin using orgmode
+   CLOSED: [2008-09-16 Tue 21:06]
+** TODO Learn org mode
+** TODO Update environment on google code
+   SCHEDULED: <2008-09-16 Tue>
+
+* Links
+** Google Code
+ [[http://code.google.com/p/environment/][here]]
+ svn checkout https://environment.googlecode.com/svn/trunk/ environment --username james@jimmay.co.uk
+** OrgMode
+
+ [[http://dto.mamalala.org/notebook/orgtutorial.html][Tutorial]]
+ [[file:~/environment/emacs/.emacs::Org%20Mode][OrgMode section in .emacs]]

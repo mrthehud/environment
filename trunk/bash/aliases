@@ -1,4 +1,4 @@
-
+#!/bin/bash
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
@@ -15,7 +15,12 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
-
-#Emacs
 alias e="emacs -nw --eval \"(setq frame-background-mode 'dark)\""
 alias n="ncmpc -c"
+
+#Load Aliases Present
+FIQ=~/environment/bash/svn-aliases
+	if [ -f $FIQ ]; then
+		. $FIQ
+		$LOADED_FILES="$LOADED_FILES:$FIQ"
+	fi

@@ -1,0 +1,18 @@
+* Tasks
+
+** TODO Get environment from google code
+
+* Issues
+
+** TODO Front Page
+*** TODO Add Deadline
+*** TODO Release 
+*** TODO Issue Links:
+
+*** TODO Feeds
+
+ Finish Front page Feed stuff
+
+*** TODO look into speed increases / improvements
+
+** 
